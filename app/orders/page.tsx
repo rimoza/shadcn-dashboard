@@ -20,7 +20,7 @@ export default function OrdersPage() {
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
 
-export const columns: ColumnDef<Order>[] = [
+const columns: ColumnDef<Order>[] = [
   {
     accessorKey: "order",
     header: ({ column }) => {
@@ -79,7 +79,7 @@ type Order = {
   method: string;
 };
 
-export const data: Order[] = [
+const data: Order[] = [
   {
     order: "ORD001",
     status: "Pending",

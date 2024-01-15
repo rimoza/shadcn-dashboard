@@ -19,7 +19,7 @@ export default function UsersPage() {
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
 
-export const columns: ColumnDef<Payment>[] = [
+const columns: ColumnDef<Payment>[] = [
   {
     accessorKey: "name",
     header: ({ column }) => {
@@ -79,7 +79,7 @@ type Payment = {
   method: string;
 };
 
-export const data: Payment[] = [
+const data: Payment[] = [
   {
     name: "Aisha Ahmed",
     email: "aisha@example.com",

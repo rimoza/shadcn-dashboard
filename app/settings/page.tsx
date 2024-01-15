@@ -17,7 +17,7 @@ export default function SettingsPage() {
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
 
-export const columns: ColumnDef<Settings>[] = [
+const columns: ColumnDef<Settings>[] = [
   {
     accessorKey: "category",
     header: "Category",
@@ -33,7 +33,7 @@ type Settings = {
   value: string | number | boolean;
 };
 
-export const data: Settings[] = [
+const data: Settings[] = [
   {
     category: "Account",
     value: true,
